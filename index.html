@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HWO High Resolution Imager | UK-led instrument team</title>
+<meta name="description" content="A UK-led team of universities and national laboratories developing concepts and technology for the High Resolution Imager (HRI) on NASA's Habitable Worlds Observatory (HWO). Funded by the UK Space Agency.">
+<meta property="og:title" content="HWO High Resolution Imager: UK-led instrument team">
+<meta property="og:description" content="UK-led team developing concepts and technology for the High Resolution Imager on NASA's Habitable Worlds Observatory. Funded by the UK Space Agency.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KICA8ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InNwZWMiIHgxPSIwIiB4Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNGExZjhjIi8+PHN0b3Agb2Zmc2V0PSIuMTIiIHN0b3AtY29sb3I9IiMzYjRmZDgiLz48c3RvcCBvZmZzZXQ9Ii4yMiIgc3RvcC1jb2xvcj0iIzFhYTBjOCIvPjxzdG9wIG9mZnNldD0iLjMiIHN0b3AtY29sb3I9IiMzY2JhNmEiLz48c3RvcCBvZmZzZXQ9Ii4zNiIgc3RvcC1jb2xvcj0iI2U4ZDQzYSIvPjxzdG9wIG9mZnNldD0iLjQxIiBzdG9wLWNvbG9yPSIjZjA4YTJjIi8+PHN0b3Agb2Zmc2V0PSIuNDYiIHN0b3AtY29sb3I9IiNkNjMzMmEiLz48c3RvcCBvZmZzZXQ9Ii41OCIgc3RvcC1jb2xvcj0iI2I4MjYyYSIvPjxzdG9wIG9mZnNldD0iLjgiIHN0b3AtY29sb3I9IiM5YTFlMjIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3YTE0MTgiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iIzE0MjAyQiIvPgogIDxyZWN0IHg9IjEwIiB5PSIyNyIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0idXJsKCNzcGVjKSIvPgo8L3N2Zz4K">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --glass:#EEF2F4; --paper:#F7F9FA; --ink:#14202B; --muted:#4A5866;
+  --line:#C9D3DA; --link:#2F45C9; --mirror:#9FB3C2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--glass);color:var(--ink);font:17px/1.6 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+a{color:var(--link);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:#fff;padding:8px 12px}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:15px}
+.bar strong{font-weight:600}
+.bar nav a{color:var(--ink);text-decoration:none;margin-left:20px}
+.bar nav a:hover{text-decoration:underline}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;align-items:center;padding:56px 0 40px}
+h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(30px,5vw,58px);line-height:1.05;letter-spacing:-.01em;margin:0 0 24px}
+.lede{font-size:20px;color:var(--muted);max-width:44ch;margin:0 0 28px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:13px 22px;border-radius:3px;text-decoration:none;font-weight:500}
+.btn:hover{background:#26364A}
+.mark{width:100%;max-width:380px;justify-self:end}
+.spectrum{grid-column:1/-1;margin-top:8px}
+.spectrum .strip{height:10px;border-radius:5px;background:linear-gradient(90deg,#4a1f8c 0%,#3b4fd8 12%,#1aa0c8 22%,#3cba6a 30%,#e8d43a 36%,#f08a2c 41%,#d6332a 46%,#8a1a1a 58%,#4a0d10 80%,#2a0709 100%)}
+.spectrum .labels{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);margin-top:8px}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:240px 1fr;gap:48px}
+h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:34px;line-height:1.1;margin:0}
+p{margin:0 0 16px;max-width:66ch}
+.work{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+.work h3{font-size:18px;font-weight:600;margin:0 0 6px}
+.work p{margin:0;color:var(--muted)}
+
+.inst{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.inst li{padding:12px 0;border-bottom:1px solid var(--line)}
+.inst li span{display:block;font-size:14px;color:var(--muted)}
+
+.funded{background:var(--paper);border-left:4px solid var(--ink);padding:20px 24px;margin:0}
+.funded p{margin:0}
+
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{margin:0 0 18px}
+.pubs .ref{display:block;font-size:15px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--ink);color:#E8EEF2;padding:64px 0;border:0}
+.contact h2{color:#fff}
+.contact a{color:#AFC0FF}
+.contact .who{font-size:20px;margin-bottom:4px;color:#fff}
+.contact .email{font-size:22px}
+
+footer{padding:28px 0 48px;font-size:14px;color:var(--muted)}
+footer p{max-width:none;margin:0 0 6px}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:24px;gap:32px}
+  .mark{justify-self:start;max-width:220px;order:-1}
+  .split{grid-template-columns:1fr;gap:20px}
+  .work,.inst{grid-template-columns:1fr}
+  .bar nav{display:none}
+  section{padding:48px 0}
+}
+
+p.big{font-size:21px;line-height:1.45;color:var(--ink);max-width:40ch;margin-bottom:20px}
+.people{margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+.people summary{cursor:pointer;font-weight:600;color:var(--link)}
+.people summary:focus-visible{outline:3px solid var(--link);outline-offset:3px}
+.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px;margin-top:20px}
+.people-group h3{font-size:15px;font-weight:600;margin:0 0 4px}
+.people-group p{margin:0;font-size:15px;color:var(--muted)}
+.funding{background:var(--paper)}
+.steps{list-style:none;margin:0;padding:0;border-left:2px solid var(--ink)}
+.steps li{position:relative;padding:0 0 24px 28px}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--ink)}
+.steps .yr{font-family:"Instrument Serif",Georgia,serif;font-size:28px;line-height:1;display:block;margin-bottom:6px}
+.steps p{margin:0}
+.contact-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
+.contact .sub{font-size:16px;color:#C8D3DC}
+.updates{border-left:1px solid #33475A;padding-left:32px}
+.updates h3{color:#fff;font-size:18px;margin:0 0 8px;font-weight:600}
+.btn-light{display:inline-block;background:#fff;color:var(--ink)!important;text-decoration:none;padding:12px 20px;border-radius:3px;font-weight:500;margin-top:4px}
+.btn-light:hover{background:#DCE4EA}
+@media (max-width:760px){
+  .people-grid,.contact-cols{grid-template-columns:1fr}
+  .updates{border-left:0;border-top:1px solid #33475A;padding:24px 0 0}
+}
+
+.leads{margin:0 0 24px;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px}
+.leads dt{font-size:14px;color:var(--muted);margin-bottom:2px}
+.leads dd{margin:0;font-weight:500}
+.people-group strong{font-weight:600;color:var(--ink)}
+@media (max-width:760px){.leads{grid-template-columns:1fr}}
+
+.people-list{margin-top:16px}
+.people-row{display:grid;grid-template-columns:240px 1fr;gap:4px 32px;padding:12px 0;border-top:1px solid var(--line)}
+.people-row h3{font-size:15px;font-weight:600;margin:0}
+.people-row p{margin:0;font-size:15px;color:var(--muted)}
+.people-row strong{color:var(--ink);font-weight:600}
+@media (max-width:760px){.people-row{grid-template-columns:1fr}}
+.logo-link{display:inline-flex;line-height:0}
+.logo{display:block;height:40px;width:auto}
+.nw{white-space:nowrap}
+@media (max-width:760px){h1{font-size:clamp(28px,8.4vw,48px)}}
+@media (max-width:330px){.nw{white-space:normal}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <div class="bar">
+    <a href="#main" class="logo-link" aria-label="HWO HRI UK, home"><svg class="logo" width="150" height="37" viewBox="0 0 420 104" role="img" aria-label="HWO HRI UK">
+  <defs><linearGradient id="specLogo" x1="0" x2="1"><stop offset="0" stop-color="#4a1f8c"/><stop offset=".12" stop-color="#3b4fd8"/><stop offset=".22" stop-color="#1aa0c8"/><stop offset=".3" stop-color="#3cba6a"/><stop offset=".36" stop-color="#e8d43a"/><stop offset=".41" stop-color="#f08a2c"/><stop offset=".46" stop-color="#d6332a"/><stop offset=".58" stop-color="#8a1a1a"/><stop offset=".8" stop-color="#4a0d10"/><stop offset="1" stop-color="#2a0709"/></linearGradient></defs>
+  <text x="0" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#14202B">HWO HRI</text>
+  <text x="306" y="62" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#14202B">UK</text>
+  <rect x="2" y="82" width="356" height="8" rx="4" fill="url(#specLogo)"/>
+</svg></a>
+    <nav aria-label="Sections"><a href="#about">Mission</a><a href="#instrument">Instrument</a><a href="#team">Team</a><a href="#news">News</a><a href="#meetings">Meetings</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
+  </div>
+
+  <header class="hero" id="main">
+    <div>
+      <h1><span class="nw">High Resolution Imager</span> for the Habitable Worlds Observatory</h1>
+      <p class="lede">We are a UK-led team of universities and national laboratories, with international partners, developing concepts and technology for the main camera on NASA's next flagship space telescope. Our work is funded by the UK Space Agency.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+
+    <!-- Original illustration of an off-axis segmented telescope, loosely based on NASA HWO concept art -->
+    <svg class="mark" viewBox="0 0 400 380" role="img" aria-label="Illustration of an off-axis segmented space telescope above a layered sunshield">
+  <defs>
+    <linearGradient id="seg" gradientUnits="userSpaceOnUse" x1="-90" y1="-90" x2="90" y2="90">
+      <stop offset="0" stop-color="#F2F6F9"/><stop offset=".45" stop-color="#C9D6E0"/><stop offset="1" stop-color="#93A8B8"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A9B9C6"/><stop offset=".4" stop-color="#DDE5EB"/><stop offset="1" stop-color="#9DAFBD"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C3CED8"/><stop offset=".55" stop-color="#E8EDF2"/><stop offset="1" stop-color="#B3C1CC"/>
+    </linearGradient>
+  </defs>
+  <!-- sunshield -->
+  <g stroke="#EEF2F4" stroke-width="1.5">
+    <polygon points="16,300 206,262 386,296 196,342" fill="#AEBCC8"/>
+    <polygon points="16,290 206,252 386,286 196,332" fill="#C3CED8"/>
+    <polygon points="16,280 206,242 386,276 196,322" fill="url(#shield)"/>
+  </g>
+  <!-- spacecraft bus -->
+  <polygon points="172,262 202,252 232,262 232,280 202,290 172,280" fill="#33475A"/>
+  <polygon points="202,252 232,262 232,280 202,270" fill="#4A6074"/>
+  <!-- telescope tube (baffle), seen from the front, tilted back slightly -->
+  <g transform="translate(200,150)">
+    <path d="M-112,0 L-112,108 C-112,126 112,126 112,108 L112,0 Z" fill="url(#tube)"/>
+    <ellipse cx="0" cy="0" rx="112" ry="104" fill="url(#tube)"/>
+    <ellipse cx="0" cy="0" rx="100" ry="93" fill="#24364A"/>
+    <g transform="scale(1,0.93)" fill="url(#seg)" stroke="#24364A" stroke-width="1"><polygon points="-50.9,-8.6 -50.9,8.6 -65.8,17.2 -80.7,8.6 -80.7,-8.6 -65.8,-17.2"/><polygon points="-34.5,19.9 -34.5,37.1 -49.4,45.7 -64.3,37.1 -64.3,19.9 -49.4,11.3"/><polygon points="-18.0,48.4 -18.0,65.6 -32.9,74.2 -47.8,65.6 -47.8,48.4 -32.9,39.8"/><polygon points="-34.5,-37.1 -34.5,-19.9 -49.4,-11.3 -64.3,-19.9 -64.3,-37.1 -49.4,-45.7"/><polygon points="-18.0,-8.6 -18.0,8.6 -32.9,17.2 -47.8,8.6 -47.8,-8.6 -32.9,-17.2"/><polygon points="-1.6,19.9 -1.6,37.1 -16.5,45.7 -31.4,37.1 -31.4,19.9 -16.5,11.3"/><polygon points="14.9,48.4 14.9,65.6 0.0,74.2 -14.9,65.6 -14.9,48.4 -0.0,39.8"/><polygon points="-18.0,-65.6 -18.0,-48.4 -32.9,-39.8 -47.8,-48.4 -47.8,-65.6 -32.9,-74.2"/><polygon points="-1.6,-37.1 -1.6,-19.9 -16.5,-11.3 -31.4,-19.9 -31.4,-37.1 -16.5,-45.7"/><polygon points="14.9,-8.6 14.9,8.6 0.0,17.2 -14.9,8.6 -14.9,-8.6 -0.0,-17.2"/><polygon points="31.4,19.9 31.4,37.1 16.5,45.7 1.6,37.1 1.6,19.9 16.5,11.3"/><polygon points="47.8,48.4 47.8,65.6 32.9,74.2 18.0,65.6 18.0,48.4 32.9,39.8"/><polygon points="14.9,-65.6 14.9,-48.4 0.0,-39.8 -14.9,-48.4 -14.9,-65.6 -0.0,-74.2"/><polygon points="31.4,-37.1 31.4,-19.9 16.5,-11.3 1.6,-19.9 1.6,-37.1 16.5,-45.7"/><polygon points="47.8,-8.6 47.8,8.6 32.9,17.2 18.0,8.6 18.0,-8.6 32.9,-17.2"/><polygon points="64.3,19.9 64.3,37.1 49.4,45.7 34.5,37.1 34.5,19.9 49.4,11.3"/><polygon points="47.8,-65.6 47.8,-48.4 32.9,-39.8 18.0,-48.4 18.0,-65.6 32.9,-74.2"/><polygon points="64.3,-37.1 64.3,-19.9 49.4,-11.3 34.5,-19.9 34.5,-37.1 49.4,-45.7"/><polygon points="80.7,-8.6 80.7,8.6 65.8,17.2 50.9,8.6 50.9,-8.6 65.8,-17.2"/></g>
+    <!-- off-axis secondary mirror on a single boom from the rim -->
+    <line x1="-96" y1="-36" x2="-36" y2="-118" stroke="#8FA3B3" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-30" cy="-124" r="13" fill="#E9EFF4" stroke="#7F95A6" stroke-width="2"/>
+  </g>
+</svg>
+
+    <div class="spectrum" aria-hidden="true">
+      <div class="strip"></div>
+      <div class="labels"><span>Ultraviolet</span><span>Visible</span><span>Near-infrared</span></div>
+    </div>
+  </header>
+</div>
+
+<main>
+<section id="about">
+  <div class="wrap split">
+    <h2>The mission</h2>
+    <div>
+      <p>The <a href="https://science.nasa.gov/astrophysics/programs/habitable-worlds-observatory/">Habitable Worlds Observatory</a> (HWO) is a large space telescope in development at NASA, planned for launch in the 2040s. It is the first mission designed to search for signs of life on planets around nearby stars, and will also carry forward the broad astrophysics of Hubble and JWST.</p>
+    </div>
+  </div>
+</section>
+
+<section id="instrument">
+  <div class="wrap split">
+    <h2>The instrument</h2>
+    <div>
+      <p>The High Resolution Imager (HRI) is planned as HWO's main camera and a general-purpose instrument for the wider astronomy community. The baseline instrument images a 3&prime; &times; 2&prime; field at wavelengths from 200 to 2200&nbsp;nm through more than fifty filters, with grisms for slitless spectroscopy and astrometry at sub-microarcsecond precision. This supports science across exoplanets, from measuring the masses of potentially habitable planets found by HWO's coronagraph to probing the atmospheres of transiting planets; the Solar System, from ocean worlds such as Europa and Enceladus to the giant planets and planetary defence; and astrophysics and cosmology, from resolved stars in nearby galaxies to the nature of dark matter and the expansion rate of the Universe.</p>
+      <p>In our design concepts, a dichroic splits the light into ultraviolet&ndash;visible and near-infrared arms that observe simultaneously, each with its own filter wheels, grisms and detector mosaic, and windowed readout enables fast cadences for bright or time-variable targets. A separate channel, developed with our partners at CEA, provides the astrometry, and HRI also supports the observatory's fine guidance and wavefront sensing. We are also studying an additional far-ultraviolet channel. Details are given in our <a href="#publications">publications</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <h2>What we do</h2>
+    <div>
+      <div class="work">
+        <div><h3>Instrument concept</h3><p>End-to-end design studies for HRI, developed in step with NASA's evolving observatory architecture.</p></div>
+        <div><h3>Technology development</h3><p>Advancing the readiness of detectors, optics and other key technologies, drawing on UK space-instrument heritage.</p></div>
+        <div><h3>Science</h3><p>Translating HWO science, from exoplanets and the Solar System to cosmology, into instrument requirements.</p></div>
+        <div><h3>Partnerships</h3><p>Working with NASA and with UK and international partners towards a future HRI instrument team.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="industry">
+  <div class="wrap split">
+    <h2>Industry</h2>
+    <div>
+      <p class="big">A UK-led High Resolution Imager would be built in partnership with industry.</p>
+      <p>The UK has world-class capability in space detectors, precision optics and aerospace engineering. We work with UK companies from the earliest design stages, so that the instrument draws on their technology and they are positioned to contribute to its construction.</p>
+      <p>Companies interested in contributing are welcome to <a href="#contact">get in touch</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap split">
+    <h2>Team</h2>
+    <div>
+      <p>Our team brings together UK groups with heritage on space instruments for missions including JWST, Euclid and Ariel, with a French partner contributing astrometry expertise. Together we bring scientists and engineers from across the instrument lifecycle.</p>
+      <ul class="inst">
+        <li>Mullard Space Science Laboratory, UCL<span>Lead institution, Surrey, UK</span></li>
+        <li>Durham University<span>Durham, UK</span></li>
+        <li>The Open University<span>Milton Keynes, UK</span></li>
+        <li>University of Leicester<span>Leicester, UK</span></li>
+        <li>University of Portsmouth<span>Portsmouth, UK</span></li>
+        <li>RAL Space, STFC<span>Harwell, UK</span></li>
+        <li>UK Astronomy Technology Centre, STFC<span>Edinburgh, UK</span></li>
+        <li>CEA Paris-Saclay<span>Gif-sur-Yvette, France</span></li>
+      </ul>
+      <!-- TRIAL: full list of team members. To remove, delete everything from here to "END TRIAL". -->
+      <details class="people">
+        <summary>Show all 61 team members</summary>
+        <div class="people-list">
+          <div class="people-row"><h3>Mullard Space Science Laboratory, UCL</h3><p><strong>Vincent Van Eylen</strong> (lead), <strong>Alan Smith</strong> (co-lead), Paul Addison, Saeeda Awan, Patrick Curry, Keith Grimstone, Abdul Hafiz, Hubert Hu, Tom Kennedy, David Linder, Adriana Mihailescu, Mat Page, Christian Plana Ferrando, Ted Pyne, Sampie Smit, Berend Winter</p></div>
+          <div class="people-row"><h3>Durham University</h3><p><strong>Richard Massey</strong> (co-lead), Andrew Dunn, Leo Fung, Joss Guy, David King, Christina Munn, Jürgen Schmoll</p></div>
+          <div class="people-row"><h3>The Open University</h3><p><strong>Jesper Skottfelt</strong> (co-lead), Timothy Arnold, Jo Barstow, Ben Dryer, David Hall</p></div>
+          <div class="people-row"><h3>University of Leicester</h3><p>Rusi Agrawal, Martin Barstow, Ian Hutchinson, Jon Lapington, Hannah Lerman, Anna Maskolenko, Melissa McHugh, Bhargav Narasimha Swamy, William Oughton, Piyal Samara-Ratna, Jack Strachan-Deol</p></div>
+          <div class="people-row"><h3>University of Portsmouth</h3><p>Becky Canning, Toby Maule, Chris Pattison, Richard Robinson, Jason Searle, Samantha Youles</p></div>
+          <div class="people-row"><h3>RAL Space, STFC</h3><p>Davide Bruzzi, Paul Eccleston, Will Grainger, Michael Plissi, Sam Tustain</p></div>
+          <div class="people-row"><h3>UK Astronomy Technology Centre, STFC</h3><p>Anjali Bhatt, Andy Born, Younes Chahid, Dan Dicken, Chris Miller, Molly Robinson, Patrick Smith, Chris Waring</p></div>
+          <div class="people-row"><h3>CEA Paris-Saclay, France</h3><p>Jérôme Amiaux, Florence Ardellier-Desages, Pierre-Olivier Lagage</p></div>
+        </div>
+      </details>
+      <!-- END TRIAL -->
+    </div>
+  </div>
+</section>
+
+<section id="funding" class="funding">
+  <div class="wrap split">
+    <h2>Supported by the UK Space Agency</h2>
+    <div>
+      <p class="big">We gratefully acknowledge the UK Space Agency, whose successive grants have taken a UK-led High Resolution Imager from first studies to an integrated instrument concept.</p>
+      <ol class="steps" reversed>
+        <li><span class="yr">2026</span><p>The UK Space Agency <a href="https://ras.ac.uk/news-and-press/research-highlights/uk-pole-position-lead-key-instrument-nasas-hunt-earth-worlds">funds a combined study</a> by the merged team, towards a UK-led High Resolution Imager.</p></li>
+        <li><span class="yr">2025</span><p>Two UK Space Agency feasibility studies explore a UK-led High Resolution Imager, following the agency's <a href="https://www.gov.uk/government/publications/call-for-uk-led-instrument-concepts-for-habitable-worlds-observatory">call for UK-led instrument concepts</a> (<a href="https://space.blog.gov.uk/2025/05/19/uk-aims-to-lead-an-instrument-on-nasa-mission-to-find-habitable-worlds/">UK Space Agency blog</a>). The teams behind them have since joined forces.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap split">
+    <h2>Publications</h2>
+    <ul class="pubs">
+      <li><a href="https://arxiv.org/abs/2610.29957">A design concept for the High Resolution Imager on the Habitable Worlds Observatory</a><span class="ref">Van Eylen, Massey et al. 2026, RASTI (HWO special issue)</span></li>
+      <li><a href="https://doi.org/10.1117/12.3104851">Study of a four-band far-UV to near-IR high-resolution imager for the Habitable Worlds Observatory</a><span class="ref">Skottfelt et al. 2026, Proc. SPIE 14145 (<a href="https://oro.open.ac.uk/112009/1/Skottfelt.2026.SPIE.HWO_HRI_study.pdf">open-access copy</a>)</span></li>
+      <li><a href="https://arxiv.org/abs/2512.16416">Transformational astrophysics and exoplanet science with Habitable Worlds Observatory's High Resolution Imager</a><span class="ref">Van Eylen, Massey et al. 2025, UK Space Frontiers 2035 white paper</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap split">
+    <h2>In the news</h2>
+    <ul class="pubs">
+      <li><a href="https://ras.ac.uk/news-and-press/research-highlights/uk-pole-position-lead-key-instrument-nasas-hunt-earth-worlds">UK in pole position to lead key instrument in NASA's hunt for Earth-like worlds</a><span class="ref">Royal Astronomical Society, July 2026</span></li>
+      <li><a href="https://le.ac.uk/news/2026/july/nam-2026-key-instrument-nasa-habitable-worlds-observatory">UK in pole position to lead key instrument in NASA's hunt for Earth-like worlds</a><span class="ref">University of Leicester, July 2026</span></li>
+      <li><a href="https://www.ucl.ac.uk/news/2025/oct/ucl-scientists-supporting-nasa-mission-find-earth-worlds">UCL scientists supporting NASA mission to find Earth-like worlds</a><span class="ref">UCL, October 2025</span></li>
+      <li><a href="https://dur.ac.uk/news-events/latest-news/2025/10/durham-scientists-supporting-nasa-mission-to-find-earth-like-worlds/">Durham scientists supporting NASA mission to find Earth-like worlds</a><span class="ref">Durham University, October 2025</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="meetings">
+  <div class="wrap split">
+    <h2>Meetings</h2>
+    <div>
+      <p>The UK HWO community meets regularly, with open workshops bringing together academia and industry. Our team presents its work at these and at international meetings.</p>
+      <ul class="pubs">
+        <li><a href="https://hwo2026.sciencesconf.org/">HWO2026, international conference on the Habitable Worlds Observatory</a><span class="ref">Massy, near Paris, 30 November to 4 December 2026. The HRI team will present.</span></li>
+        <li><a href="https://ras.ac.uk/news-and-press/research-highlights/uk-pole-position-lead-key-instrument-nasas-hunt-earth-worlds">UK HWO session at the National Astronomy Meeting</a><span class="ref">Birmingham, July 2026</span></li>
+        <li><a href="https://sites.google.com/view/hwouk/">UK HWO Community Workshop</a><span class="ref">UCL, London, June 2026</span></li>
+        <li>Earlier UK HWO community workshops<span class="ref">Royal Observatory Edinburgh; The Open University, Milton Keynes; Space Park Leicester</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap split">
+    <h2>Contact</h2>
+    <div class="contact-cols">
+      <div>
+        <p>We welcome enquiries from scientists, engineers, space agencies and industry interested in collaborating on HRI, and from the media.</p>
+        <p class="who">Professor Vincent Van Eylen<br><span class="sub">Lead, Mullard Space Science Laboratory, University College London</span></p>
+        <p class="email"><a href="mailto:v.vaneylen@ucl.ac.uk?subject=HWO%20HRI%20enquiry">v.vaneylen@ucl.ac.uk</a></p>
+      </div>
+      <div class="updates" id="updates">
+        <h3>Get news and updates</h3>
+        <p>Join our mailing list for occasional updates on the instrument, meetings and opportunities to get involved.</p>
+                <a class="btn-light" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwoJGRgb7bedHn6eIa2KjM11UOE9QWU8wWkdGNjlPRUNUQ09JT0lYM1dKRy4u" target="_blank" rel="noopener">Join the mailing list</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>This is not an official NASA website. HWO is in development and its instruments have not yet been selected.</p>
+    <p>Last reviewed October 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
