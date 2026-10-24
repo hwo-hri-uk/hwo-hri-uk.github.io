@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="104" viewBox="0 0 420 104" role="img" aria-label="HWO HRI UK">
+  <defs><linearGradient id="spec" x1="0" x2="1"><stop offset="0" stop-color="#4a1f8c"/><stop offset=".12" stop-color="#3b4fd8"/><stop offset=".22" stop-color="#1aa0c8"/><stop offset=".3" stop-color="#3cba6a"/><stop offset=".36" stop-color="#e8d43a"/><stop offset=".41" stop-color="#f08a2c"/><stop offset=".46" stop-color="#d6332a"/><stop offset=".58" stop-color="#b8262a"/><stop offset=".8" stop-color="#9a1e22"/><stop offset="1" stop-color="#7a1418"/></linearGradient></defs>
+  <text x="0" y="62" font-family="Georgia, 'Times New Roman', serif" font-size="64" fill="#FFFFFF">HWO HRI<tspan dx="14" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700">UK</tspan></text>
+  <rect x="2" y="82" width="356" height="8" rx="4" fill="url(#spec)"/>
+</svg>
